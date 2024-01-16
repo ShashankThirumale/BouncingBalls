@@ -60,9 +60,10 @@ const removeBall = () => {
 }
 
 const removeAll = () => {
-    balls.forEach((ball)=>{
+    while (balls.length != 0) {
+        var ball = balls.pop();
         const container = document.getElementById('ballPit');
         loadedBalls.pop();
         container.removeChild(ball);
-    });
+    }
 }
