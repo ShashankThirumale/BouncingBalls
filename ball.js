@@ -58,3 +58,11 @@ const removeBall = () => {
     loadedBalls.pop();
     container.removeChild(ball);
 }
+
+const removeAll = () => {
+    balls.forEach((ball)=>{
+        const container = document.getElementById('ballPit');
+        loadedBalls.pop();
+        container.removeChild(ball);
+    });
+}
